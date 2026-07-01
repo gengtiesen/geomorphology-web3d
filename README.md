@@ -1,4 +1,4 @@
-# 地貌实习Web3D可视化平台
+# 野外实习路线Web3D可视化平台
 
 JavaScript与Web开发课程大作业。
 
@@ -6,7 +6,6 @@ JavaScript与Web开发课程大作业。
 
 **https://gengtiesen.github.io/geomorphology-web3d/**
 
-点击即看，无需安装任何东西。
 
 ## 项目简介
 
@@ -16,7 +15,7 @@ JavaScript与Web开发课程大作业。
 
 JavaScript（ES6+） · React 18 · Vite · Cesium.js · Ant Design · Zustand · ECharts · Canvas 2D API
 
-## 本地运行（可选）
+## 本地运行
 
 ```bash
 npm install
