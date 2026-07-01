@@ -1,8 +1,12 @@
 # 地貌实习Web3D可视化平台
 
-北京大学城市与环境学院 2400013411 耿铁森
-
 JavaScript与Web开发课程大作业。
+
+## 👉 在线访问
+
+**https://gengtiesen.github.io/geomorphology-web3d/**
+
+点击即看，无需安装任何东西。
 
 ## 项目简介
 
@@ -12,14 +16,9 @@ JavaScript与Web开发课程大作业。
 
 JavaScript（ES6+） · React 18 · Vite · Cesium.js · Ant Design · Zustand · ECharts · Canvas 2D API
 
-## 运行方式
+## 本地运行（可选）
 
 ```bash
 npm install
 npm run dev
-# 浏览器访问 http://localhost:5173
 ```
-
-## 在线演示
-
-🔗 https://gengtiesen.github.io/geomorphology-web3d/
