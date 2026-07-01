@@ -4,7 +4,7 @@ import { parseGPXFile, parseObservationPoints } from './fileUtils';
 // 加载天数清单
 export const loadDayManifest = async () => {
   try {
-    const response = await fetch('/data/manifest.json');
+    const response = await fetch('./data/manifest.json');
     const data = await response.json();
     return data.days;
   } catch (error) {

@@ -6,8 +6,8 @@
       "date": "2025-06-24",
       "description": "许堡东疙瘩地区河流地貌考察",
       "dataFiles": {
-        "track": "/data/day1/track.gpx",
-        "observationPoints": "/data/day1/points.csv"
+        "track": "./data/day1/track.gpx",
+        "observationPoints": "./data/day1/points.csv"
       },
       "docBasePath": "6.24许堡东疙瘩"
     },
@@ -17,8 +17,8 @@
       "date": "2025-06-25",
       "description": "六棱山秋林沟考察",
       "dataFiles": {
-        "track": "/data/day2/track.gpx",
-        "observationPoints": "/data/day2/points.csv"
+        "track": "./data/day2/track.gpx",
+        "observationPoints": "./data/day2/points.csv"
       },
       "docBasePath": "6.25六棱山秋林沟"
     },
@@ -28,8 +28,8 @@
       "date": "2025-06-26",
       "description": "黑山观察",
       "dataFiles": {
-        "track": "/data/day3/track.gpx",
-        "observationPoints": "/data/day3/points.csv"
+        "track": "./data/day3/track.gpx",
+        "observationPoints": "./data/day3/points.csv"
       },
       "docBasePath": "6.26黑山"
     },
@@ -39,8 +39,8 @@
       "date": "2025-06-27",
       "description": "册田水库桑干河地貌观察",
       "dataFiles": {
-        "track": "/data/day4/track.gpx",
-        "observationPoints": "/data/day4/points.csv"
+        "track": "./data/day4/track.gpx",
+        "observationPoints": "./data/day4/points.csv"
       },
       "docBasePath": "6.27册田水库桑干河"
     },
@@ -50,8 +50,8 @@
       "date": "2025-06-28", 
       "description": "西浮头观察",
       "dataFiles": {
-        "track": "/data/day5/track.gpx",
-        "observationPoints": "/data/day5/points.csv"
+        "track": "./data/day5/track.gpx",
+        "observationPoints": "./data/day5/points.csv"
       },
       "docBasePath": "6.28西浮头恒山"
     },
@@ -61,8 +61,8 @@
       "date": "2025-06-30",
       "description": "沙板梁观察",
       "dataFiles": {
-        "track": "/data/day6/track.gpx", 
-        "observationPoints": "/data/day6/points.csv"
+        "track": "./data/day6/track.gpx", 
+        "observationPoints": "./data/day6/points.csv"
       },
       "docBasePath": "6.30沙板梁红泥沟"
     },
@@ -72,8 +72,8 @@
       "date": "2025-07-02",
       "description": "东大沟观察",
       "dataFiles": {
-        "track": "/data/day7/track.gpx", 
-        "observationPoints": "/data/day7/points.csv"
+        "track": "./data/day7/track.gpx", 
+        "observationPoints": "./data/day7/points.csv"
       },
       "docBasePath": "7.2东大沟"
     },
@@ -83,8 +83,8 @@
       "date": "2025-07-04",
       "description": "联峰山观察",
       "dataFiles": {
-        "track": "/data/day8/track.gpx", 
-        "observationPoints": "/data/day8/points.csv"
+        "track": "./data/day8/track.gpx", 
+        "observationPoints": "./data/day8/points.csv"
       },
       "docBasePath": "7.4联峰山"
     },
@@ -94,8 +94,8 @@
       "date": "2025-07-05",
       "description": "山海关观察",
       "dataFiles": {
-        "track": "/data/day9/track.gpx", 
-        "observationPoints": "/data/day9/points.csv"
+        "track": "./data/day9/track.gpx", 
+        "observationPoints": "./data/day9/points.csv"
       },
       "docBasePath": "7.5山海关"
     },
@@ -105,8 +105,8 @@
       "date": "2025-07-06",
       "description": "南戴河鸽子窝观察",
       "dataFiles": {
-        "track": "/data/day10/track.gpx", 
-        "observationPoints": "/data/day10/points.csv"
+        "track": "./data/day10/track.gpx", 
+        "observationPoints": "./data/day10/points.csv"
       },
       "docBasePath": "7.6南戴河鸽子窝"
     }
