@@ -1,0 +1,70 @@
+<!-- 在 public/test-images-debug.html 创建更详细的测试 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图片详细诊断</title>
+</head>
+<body>
+    <h1>图片文件详细诊断</h1>
+    
+    <div id="results"></div>
+
+    <script>
+        const testFiles = [
+            './观察点文档/6.24许堡东疙瘩/观察点1 剖面图.jpg',
+            './观察点文档/6.24许堡东疙瘩/观察点1 图片.jpg'
+        ];
+
+        async function testImageFile(filePath) {
+            const resultDiv = document.createElement('div');
+            resultDiv.style.padding = '10px';
+            resultDiv.style.margin = '10px 0';
+            resultDiv.style.border = '1px solid #ccc';
+            
+            try {
+                const response = await fetch(filePath);
+                const status = response.status;
+                const contentType = response.headers.get('content-type');
+                const contentLength = response.headers.get('content-length');
+                
+                // 读取前100个字符来检查内容
+                const buffer = await response.arrayBuffer();
+                const header = new Uint8Array(buffer.slice(0, 100));
+                const headerHex = Array.from(header).map(b => b.toString(16).padStart(2, '0')).join(' ');
+                
+                resultDiv.innerHTML = `
+                    <h3>${filePath}</h3>
+                    <p>状态: ${status}</p>
+                    <p>内容类型: ${contentType}</p>
+                    <p>文件大小: ${contentLength} bytes</p>
+                    <p>文件头: ${headerHex}</p>
+                    <p>预览:</p>
+                    <img src="${filePath}" style="max-width: 300px; border: 2px solid red;" 
+                         onerror="this.alt='加载失败'" 
+                         onload="this.alt='加载成功'">
+                `;
+                
+                // 检查是否是有效的JPEG文件
+                if (header[0] === 0xFF && header[1] === 0xD8 && header[2] === 0xFF) {
+                    resultDiv.style.backgroundColor = '#e8f5e8';
+                    resultDiv.innerHTML += '<p style="color: green;">✅ 是有效的JPEG文件</p>';
+                } else {
+                    resultDiv.style.backgroundColor = '#ffe8e8';
+                    resultDiv.innerHTML += '<p style="color: red;">❌ 不是有效的JPEG文件</p>';
+                }
+                
+            } catch (error) {
+                resultDiv.style.backgroundColor = '#ffe8e8';
+                resultDiv.innerHTML = `
+                    <h3>${filePath}</h3>
+                    <p style="color: red;">错误: ${error.message}</p>
+                `;
+            }
+            
+            document.getElementById('results').appendChild(resultDiv);
+        }
+
+        testFiles.forEach(testImageFile);
+    </script>
+</body>
+</html>
