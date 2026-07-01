@@ -5,9 +5,8 @@ import cesium from 'vite-plugin-cesium'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), cesium()],
-  // GitHub Pages部署：设置base为仓库名，构建后所有资源路径自动加前缀
-  // 如果仓库名不同，请修改此处
-  base: '/geomorphology-web3d/',
+  // 使用相对路径，适配GitHub Pages任意子目录
+  base: './',
   define: {
     // Define global constants - remove the custom CESIUM_BASE_URL as vite-plugin-cesium handles this
   },
